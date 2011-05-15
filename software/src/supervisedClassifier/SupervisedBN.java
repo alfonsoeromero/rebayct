@@ -357,6 +357,8 @@ public class SupervisedBN extends BNClassifier
         m.clear();
         si = new ThesaurusStringIndexer();
         si.setLexicon(BNClassifier.lex);
+        System.err.println("yuyu");
+        System.err.println("yeee " + s);
         si.add(s);
         m = si.getFreq();
         return this.classify(s);
